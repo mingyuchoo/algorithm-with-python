@@ -1,5 +1,5 @@
 import unittest
-from .my_module import my_function
+from day6.my_module import my_function
 
 
 class MyTestCase(unittest.TestCase):

@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(greeting(), "")
 
     def test_given_name_when_call_greeting_should_print_hello(self):
-        self.assertEqual(greeting("Mingyu"), "Hello, Mingyu")
+        self.assertEqual(greeting("MingyuChoo"), "Hello, Mingyu")
 
 
 if __name__ == '__main__':

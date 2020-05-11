@@ -11,6 +11,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_given_valid_parameters_when_run_with_them_then_return_valid_data(self):
         self.assertEqual(29, my_function([1, 4, 2], [5, 4, 4]))
+        self.assertEqual(10, my_function([1, 2], [3, 4]))
 
 
 if __name__ == '__main__':

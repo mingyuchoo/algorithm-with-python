@@ -1,10 +1,8 @@
-@solution @day8
+@solution @day99999
 Feature:
 
   Acceptance Criteria:
-
-  Background:
-    Given
+  -
 
   Scenario Outline:
     Given

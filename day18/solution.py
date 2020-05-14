@@ -1,6 +1,19 @@
 def solution(clothes=None):
-    answer = 0
-    if not isinstance(clothes, list):
-        return answer
+    answer = 1
+    d = {}
 
-    return answer
+    if not isinstance(clothes, list):
+        return 0
+
+    for val, key in clothes:
+        if key in d.keys():
+            d[key].append(val)
+        else:
+            d[key] = [val]
+
+    for val in d.values():
+        print('>>>>', val, len(val)+1)
+
+        answer *= (len(val)+1)
+
+    return answer - 1

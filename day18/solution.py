@@ -12,8 +12,6 @@ def solution(clothes=None):
             d[key] = [val]
 
     for val in d.values():
-        print('>>>>', val, len(val)+1)
-
         answer *= (len(val)+1)
 
     return answer - 1

@@ -1,6 +1,6 @@
 import unittest
 import string
-from day20.solution import LinkedList
+from day20_linked_list.solution import LinkedList
 
 
 class MyTestCase(unittest.TestCase):
@@ -15,16 +15,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(False, l.find('Hello'))
 
         l.delete('Z')
-        print(l.traversal())
-
         l.delete('W')
-        print(l.traversal())
-
         l.delete('A')
-        print(l.traversal())
-
         l.sort()
-        print(l.traversal())
+
 
 if __name__ == '__main__':
     unittest.main()

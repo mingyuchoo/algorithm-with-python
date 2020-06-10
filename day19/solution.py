@@ -17,7 +17,3 @@ def driver(param: list) -> int:
         if ret_value > max_cycle_length:
             max_cycle_length = ret_value
     return max_cycle_length
-
-
-# if __name__ == "__main__":
-#     print('result >> {result}'.format(result=driver([1, 10])))

@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         data = reversed(string.ascii_uppercase)
         for i in data:
             l.append(i)
-        print(l.traversal())
+        # print(l.traversal())
         self.assertEqual(True, l.find('Z'))
         self.assertEqual(False, l.find('Hello'))
 

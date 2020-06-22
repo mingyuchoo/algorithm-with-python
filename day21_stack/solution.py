@@ -10,7 +10,7 @@ def solution():
         if len(a) == 0 or len(b) == 0:
             switch = not switch
 
-        print('-'*30)
+        # print('-'*30)
         if switch:
             b.append(a.pop())
             for i in range(max_len -1, -1, -1):
@@ -21,3 +21,4 @@ def solution():
                 print('[{}] [{}]'.format(' ' if len(a) <= i else a[i], ' ' if len(b) <= i else b[i]))
 
         time.sleep(0.3)
+

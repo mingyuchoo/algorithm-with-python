@@ -8,7 +8,8 @@ def solution():
     switch = False
     while True:
         if len(a) == 0 or len(b) == 0:
-            switch = not switch
+            # switch = not switch
+            break;
 
         # print('-'*30)
         if switch:

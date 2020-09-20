@@ -2,13 +2,21 @@
 #
 from collections import deque
 
-graph_list = {1: set([3, 4]),
-              2: set([3, 4, 5]),
-              3: set([1, 5]),
-              4: set([1]),
-              5: set([2, 6]),
-              6: set([3, 5])}
-root_node = 1
+# graph = {1: set([3, 4]),
+#               2: set([3, 4, 5]),
+#               3: set([1, 5]),
+#               4: set([1]),
+#               5: set([2, 6]),
+#               6: set([3, 5])}
+graph = {1: {3, 4},
+         2: {3, 4, 5},
+         3: {1, 5},
+         4: {1},
+         5: {2, 6},
+         6: {3, 5}
+         }
+
+root = 1
 
 
 def BFS_with_adj_list(graph, root):
@@ -23,4 +31,4 @@ def BFS_with_adj_list(graph, root):
     return visited
 
 
-print(BFS_with_adj_list(graph_list, root_node))
+print(BFS_with_adj_list(graph, root))

@@ -9,6 +9,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(110, solution(100, 100, [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]))
 
 
-
 if __name__ == '__main__':
     unittest.main()

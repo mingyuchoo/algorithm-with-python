@@ -13,19 +13,11 @@ def dfs(graph, root):
     return visited
 
 
-def solution(matrix):
+def solution(matrix, root):
     graph = defaultdict(list)
 
     for array in matrix:
         graph[array[0]].append(array[1])
         graph[array[0]].sort()
     print(graph)
-    return dfs(graph, "ICN")
-
-
-if __name__ == "__main__":
-    journey = [['ICN', 'SFO'], ['ICN', 'ATL'], ['SFO', 'ATL'], ['ATL', 'ICN'], ['ATL', 'SFO']]
-    print(solution(journey))
-
-    journey = [['ICN', 'JFK'], ['HND', 'IAD'], ['JFK', 'HND']]
-    print(solution(journey))
+    return dfs(graph, root)

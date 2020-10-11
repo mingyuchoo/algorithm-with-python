@@ -2,10 +2,11 @@
 
 
 def dfs_with_adj_list(graph, root):
-    visited = []
     stack = [root]
+    visited = []
 
     while stack:
+        print(stack)
         vertex = stack.pop()
         if vertex not in visited:
             visited.append(vertex)

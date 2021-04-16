@@ -28,5 +28,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(False, my_function(-1))
 
     def test_given_composite_string_with_number_and_alphabet_when_input_the_value_then_get_False(self):
-        self.assertEqual(False, my_function("123a"));
-        self.assertEqual(my_function("1234567a"), False);
+        self.assertEqual(False, my_function("123a"))
+        self.assertEqual(my_function("1234567a"), False)

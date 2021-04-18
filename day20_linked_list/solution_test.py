@@ -1,9 +1,9 @@
-import unittest
+from unittest import TestCase, main
 import string
 from day20_linked_list.solution import LinkedList
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
 
     def test_something(self):
         l = LinkedList()
@@ -21,4 +21,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

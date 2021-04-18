@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day5.my_module import my_function
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
     def test_given_Nothing_when_run_without_anything_then_return_null_string(self):
         self.assertEqual("", my_function())
 
@@ -23,4 +23,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

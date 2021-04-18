@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day4.my_module import my_function
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
     def test_given_a_parameter_greater_than_100000_when_input_the_parameter_then_occur_exception(self):
         self.assertEqual(False, my_function("a"*100001, "b"*100001))
 
@@ -20,4 +20,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day19.solution import driver
 
 
-class SolutionTestCase(unittest.TestCase):
+class SolutionTestCase(TestCase):
     def test_positive_01(self):
         self.assertEqual(20, driver([1, 10]))
         self.assertEqual(125, driver([100, 200]))
@@ -11,5 +11,5 @@ class SolutionTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
 

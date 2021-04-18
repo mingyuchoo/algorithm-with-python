@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day27_workout_clothes.solution import solution
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
     def test_something(self):
         self.assertEqual(5, solution(5, [2, 4], [1, 3, 5]))
         self.assertEqual(4, solution(5, [2, 4], [3]))
@@ -10,4 +10,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

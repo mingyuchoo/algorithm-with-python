@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day12.my_module import my_function, masking_string, convert_binary
 
 
-class MaskingStringTestCase(unittest.TestCase):
+class MaskingStringTestCase(TestCase):
     def test_given_nothing_when_check_the_parameter_is_valid_then_return_None(self):
         self.assertEqual(None, masking_string())
 
@@ -26,7 +26,7 @@ class MaskingStringTestCase(unittest.TestCase):
         self.assertEqual('### #', masking_string('11100', '10101'))
 
 
-class ConvertBinaryTestCase(unittest.TestCase):
+class ConvertBinaryTestCase(TestCase):
     def test_given_nothing_when_check_the_parameter_is_valid_then_return_negative_1(self):
         self.assertEqual(-1, convert_binary())
 
@@ -36,7 +36,7 @@ class ConvertBinaryTestCase(unittest.TestCase):
         self.assertEqual("00001", convert_binary(5, 1))
 
 
-class MyFunctionTestCase(unittest.TestCase):
+class MyFunctionTestCase(TestCase):
     def test_given_nothing_when_check_the_parameters_are_given_correctly_then_return_empty_list(self):
         self.assertEqual([], my_function())
 
@@ -59,4 +59,4 @@ class MyFunctionTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

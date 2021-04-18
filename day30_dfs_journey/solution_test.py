@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day30_dfs_journey.solution import solution
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
 
     def test_case_1(self):
         journey = [['ICN', 'SFO'], ['ICN', 'ATL'], ['SFO', 'ATL'], ['ATL', 'ICN'], ['ATL', 'SFO']]
@@ -14,4 +14,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

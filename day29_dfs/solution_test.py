@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day29_dfs.solution import dfs_with_adj_list
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
 
     def test_something(self):
 
@@ -32,4 +32,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

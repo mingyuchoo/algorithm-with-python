@@ -1,9 +1,9 @@
-import unittest
+from unittest import TestCase, main
 
 from day2.my_module import my_function
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
 
     def test_given_nothing_when_run_my_function_should_return_False(self):
         self.assertEqual(False, my_function())

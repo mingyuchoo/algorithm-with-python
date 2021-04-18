@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day1.my_module import my_function
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
     def test_given_nothing_when_run_my_function_should_return_even(self):
         self.assertEqual(my_function(), "Even")
 
@@ -14,4 +14,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

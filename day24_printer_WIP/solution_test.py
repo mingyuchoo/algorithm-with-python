@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from day24_printer_WIP.solution import solution
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
     def test_something(self):
         pass
         # self.assertEqual(1, solution([2, 1, 3, 2], 2))
@@ -10,4 +10,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

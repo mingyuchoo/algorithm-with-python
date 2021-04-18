@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase, main
 from template.solution import solution
 
 
-class SolutionTestCase(unittest.TestCase):
+class SolutionTestCase(TestCase):
     def test_given_nothing_when_run_app_without_nothing_then_return_null_string(self):
         self.assertEqual(None, solution())
 
@@ -11,4 +11,4 @@ class SolutionTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

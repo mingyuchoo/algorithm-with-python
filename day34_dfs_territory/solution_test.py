@@ -1,7 +1,7 @@
-import unittest
+from unittest import TestCase, main
 
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase(TestCase):
 
     def test_case_1(self):
 
@@ -9,4 +9,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
